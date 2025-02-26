@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import "./App.css";
+import "aos/dist/aos.css";
+import AOS from "aos";
+AOS.init();
 function App() {
   const [portfolioDB, setPortfolioDB] = useState([
     {
@@ -67,34 +70,34 @@ function App() {
   return (
     <>
       <header id="navbar">
-        <div class="mobileLinksBack">
-          <div class="mobileLinks">
-            <div class="mobileModalLogo">
+        <div className="mobileLinksBack">
+          <div className="mobileLinks">
+            <div className="mobileModalLogo">
               <img src="/logo.png" alt="" />
             </div>
-            <ul class="mobileLinksList">
+            <ul className="mobileLinksList">
               <li>
-                <a class="active link" href="#navbar">
+                <a className="active link" href="#navbar">
                   Home
                 </a>
               </li>
               <li>
-                <a class="link" href="#skills">
+                <a className="link" href="#skills">
                   Skills
                 </a>
               </li>
               <li>
-                <a class="link" href="#services">
+                <a className="link" href="#services">
                   Services
                 </a>
               </li>
               <li>
-                <a class="link" href="#portfolio">
+                <a className="link" href="#portfolio">
                   Portfolio
                 </a>
               </li>
               <li>
-                <a class="link" href="#about">
+                <a className="link" href="#about">
                   About
                 </a>
               </li>
@@ -102,21 +105,21 @@ function App() {
           </div>
         </div>
         <nav>
-          <div class="container">
-            <div class="bar">
-              <i class="fas fa-bars"></i>
+          <div className="container">
+            <div className="bar">
+              <i className="fas fa-bars"></i>
             </div>
             <a
               href="#navbar"
-              class="logo"
+              className="logo"
               data-aos="fade-right"
               data-aos-duration="3000"
             >
               <img src="/logo.png" alt="" />
             </a>
-            <ul class="links" data-aos="fade-down" data-aos-duration="3000">
+            <ul className="links" data-aos="fade-down" data-aos-duration="3000">
               <li>
-                <a class="active" href="#navbar">
+                <a className="active" href="#navbar">
                   Home
                 </a>
               </li>
@@ -139,94 +142,94 @@ function App() {
               target="_blank"
               href="https://t.me/Kamoliddin_Mirzaboyev"
             >
-              <button class="contactBtn">Contact</button>
+              <button className="contactBtn">Contact</button>
             </a>
           </div>
-          <a href="#navbar" class="up">
-            <i class="fa-solid fa-up-long"></i>
+          <a href="#navbar" className="up">
+            <i className="fa-solid fa-up-long"></i>
           </a>
         </nav>
-        <div class="hero">
-          <div class="container">
-            <div class="heroText">
+        <div className="hero">
+          <div className="container">
+            <div className="heroText">
               <h2 data-aos="fade-right" data-aos-duration="3000">
                 Hi, I am <br />
-                <span class="name"> Kamoliddin Mirzaboyev </span> <br />
-                <span class="job">Frontend Developer</span>
+                <span className="name"> Kamoliddin Mirzaboyev </span> <br />
+                <span className="job">Frontend Developer</span>
               </h2>
-              <div class="heroSocials">
+              <div className="heroSocials">
                 <a
                   data-aos="fade-right"
                   data-aos-duration="3000"
                   target="_blank"
                   href="https://www.instagram.com/mirzaboyevk/"
-                  class="iconBox"
+                  className="iconBox"
                 >
-                  <p class="socialName instagram">Instagram</p>
+                  <p className="socialName instagram">Instagram</p>
 
-                  <i class="fa-brands fa-instagram"></i>
+                  <i className="fa-brands fa-instagram"></i>
                 </a>
                 <a
                   data-aos="fade-right"
                   data-aos-duration="3000"
                   target="_blank"
                   href="https://t.me/Kamoliddin_Mirzaboyev"
-                  class="iconBox"
+                  className="iconBox"
                 >
-                  <p class="socialName telegram">Telegram</p>
-                  <i class="fa-brands fa-telegram"></i>
+                  <p className="socialName telegram">Telegram</p>
+                  <i className="fa-brands fa-telegram"></i>
                 </a>
                 <a
                   data-aos="fade-right"
                   data-aos-duration="3000"
                   target="_blank"
                   href="https://github.com/Kamoliddinmirzaboyev05"
-                  class="iconBox"
+                  className="iconBox"
                 >
-                  <p class="socialName github">GitHub</p>
+                  <p className="socialName github">GitHub</p>
 
-                  <i class="fa-brands fa-github"></i>
+                  <i className="fa-brands fa-github"></i>
                 </a>
                 <a
                   data-aos="fade-right"
                   data-aos-duration="3000"
                   target="_blank"
                   href="https://t.me/MKPortfolio_Codial"
-                  class="iconBox"
+                  className="iconBox"
                 >
-                  <p class="socialName linkedin">Portfolio</p>
+                  <p className="socialName linkedin">Portfolio</p>
 
-                  <i class="fa-solid fa-briefcase"></i>
+                  <i className="fa-solid fa-briefcase"></i>
                 </a>
               </div>
-              <div class="heroBtns" data-aos="fade-up" data-aos-duration="3000">
-                <button class="hireMeBtn">Hire Me</button>
+              <div className="heroBtns" data-aos="fade-up" data-aos-duration="3000">
+                <button className="hireMeBtn">Hire Me</button>
                 <a href="/resume.txt" download="Resume">
-                  <button class="download">
-                    <i class="fas fa-download"></i> Download CV
+                  <button className="download">
+                    <i className="fas fa-download"></i> Download CV
                   </button>
                 </a>
               </div>
               <div
-                class="experienceBoxes"
+                className="experienceBoxes"
                 data-aos="fade-left"
                 data-aos-duration="3000"
               >
-                <div class="experience">
+                <div className="experience">
                   <h2>1+</h2>
                   <p>Experience</p>
                 </div>
-                <div class="experience">
+                <div className="experience">
                   <h2>1+</h2>
                   <p>Real Projects</p>
                 </div>
-                <div class="experience">
+                <div className="experience">
                   <h2>50+</h2>
                   <p>Projects</p>
                 </div>
               </div>
             </div>
-            <div class="heroImg" data-aos="fade-left" data-aos-duration="3000">
+            <div className="heroImg" data-aos="fade-left" data-aos-duration="3000">
               <img src="/logg.jpg" alt="" />
             </div>
           </div>
@@ -236,76 +239,76 @@ function App() {
       <main>
         <section
           id="skills"
-          class="skills"
+          className="skills"
           data-aos="fade-top"
           data-aos-duration="3000"
         >
-          <div class="container">
-            <div class="sectionTitle">
+          <div className="container">
+            <div className="sectionTitle">
               <h2>My Skills</h2>
             </div>
-            <div class="skillsBlock">
+            <div className="skillsBlock">
               <div
-                class="skillBox"
+                className="skillBox"
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-                <h2 class="skillHover">90% learned</h2>
-                <h2 class="skillName">HTML5</h2>
+                <h2 className="skillHover">90% learned</h2>
+                <h2 className="skillName">HTML5</h2>
                 <img src="/html5.svg" alt="" />
               </div>
               <div
-                class="skillBox"
+                className="skillBox"
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-                <h2 class="skillHover">87% learned</h2>
-                <h2 class="skillName">CSS3</h2>
+                <h2 className="skillHover">87% learned</h2>
+                <h2 className="skillName">CSS3</h2>
                 <img src="/css3.svg" alt="" />
               </div>
               <div
-                class="skillBox"
+                className="skillBox"
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-                <h2 class="skillHover">75% learned</h2>
-                <h2 class="skillName">SASS</h2>
+                <h2 className="skillHover">75% learned</h2>
+                <h2 className="skillName">SASS</h2>
                 <img src="/sass-original.svg" alt="" />
               </div>
               <div
-                class="skillBox"
+                className="skillBox"
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-                <h2 class="skillHover">68% learned</h2>
-                <h2 class="skillName">Bootstrap</h2>
+                <h2 className="skillHover">68% learned</h2>
+                <h2 className="skillName">Bootstrap</h2>
                 <img src="/bootstrapwhite.svg" alt="" />
               </div>
               <div
-                class="skillBox"
+                className="skillBox"
                 data-aos="fade-left"
                 data-aos-duration="3000"
               >
-                <h2 class="skillHover">72% learned</h2>
-                <h2 class="skillName">Tailwind</h2>
+                <h2 className="skillHover">72% learned</h2>
+                <h2 className="skillName">Tailwind</h2>
                 <img src="/tailwind-css.svg" alt="" />
               </div>
               <div
-                class="skillBox"
+                className="skillBox"
                 data-aos="fade-left"
                 data-aos-duration="3000"
               >
-                <h2 class="skillHover">82% learned</h2>
-                <h2 class="skillName">JavaScript</h2>
+                <h2 className="skillHover">82% learned</h2>
+                <h2 className="skillName">JavaScript</h2>
                 <img src="/javascript-js.svg" alt="" />
               </div>
               <div
-                class="skillBox"
+                className="skillBox"
                 data-aos="fade-left"
                 data-aos-duration="3000"
               >
-                <h2 class="skillHover">15% learned</h2>
-                <h2 class="skillName">ReactJS</h2>
+                <h2 className="skillHover">15% learned</h2>
+                <h2 className="skillName">ReactJS</h2>
                 <img src="/file-type-reactjs.svg" alt="" />
               </div>
             </div>
@@ -314,21 +317,21 @@ function App() {
 
         <section
           id="services"
-          class="services"
+          className="services"
           data-aos="fade-top"
           data-aos-duration="3000"
         >
-          <div class="container">
-            <div class="sectionTitle">
+          <div className="container">
+            <div className="sectionTitle">
               <h2>Services</h2>
             </div>
-            <div class="servicesBlock">
+            <div className="servicesBlock">
               <div
-                class="serviceBox"
+                className="serviceBox"
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
-                <div class="boxImg">
+                <div className="boxImg">
                   <img src="/globe.svg" alt="" />
                 </div>
                 <h2>Web Development</h2>
@@ -352,11 +355,11 @@ function App() {
                 <p></p>
               </div>
               <div
-                class="serviceBox"
+                className="serviceBox"
                 data-aos="fade-up"
                 data-aos-duration="3000"
               >
-                <div class="boxImg">
+                <div className="boxImg">
                   <img src="/uxui.svg" alt="" />
                 </div>
                 <h2>Web Platforms</h2>
@@ -382,11 +385,11 @@ function App() {
                 </ul>
               </div>
               <div
-                class="serviceBox"
+                className="serviceBox"
                 data-aos="fade-left"
                 data-aos-duration="3000"
               >
-                <div class="boxImg">
+                <div className="boxImg">
                   <img src="/spa.svg" alt="" />
                 </div>
                 <h2>Single Page Applications</h2>
@@ -417,38 +420,38 @@ function App() {
 
         <section
           id="portfolio"
-          class="projects"
+          className="projects"
           data-aos="fade-up"
           data-aos-duration="3000"
         >
-          <div class="container">
-            <div class="sectionTitle">
+          <div className="container">
+            <div className="sectionTitle">
               <h2>Portfolio</h2>
             </div>
-            <div class="sectionTitle">
-              <div class="portfolioFilter">
-                <button class="featuredBtn activeBtn">Featured</button>
-                <button class="staticBtn">Static</button>
-                <button class="interactiveBtn">Interactive</button>
-                <button class="apiBtn">API Integrated</button>
-                <button class="reactBtn">React-Based</button>
+            <div className="sectionTitle">
+              <div className="portfolioFilter">
+                <button className="featuredBtn activeBtn">Featured</button>
+                <button className="staticBtn">Static</button>
+                <button className="interactiveBtn">Interactive</button>
+                <button className="apiBtn">API Integrated</button>
+                <button className="reactBtn">React-Based</button>
                 <a target="_blank" href="https://t.me/MKPortfolio_Codial">
-                  <button class="all">All</button>
+                  <button className="all">All</button>
                 </a>
               </div>
-              <h4 class="portfolioInfo">
+              <h4 className="portfolioInfo">
                 HTML, CSS, SASS, Bootstrap, Tailwind-CSS, JavaScript and ReactJS
                 Projects
               </h4>
-              <div class="portfolioBlock featured">
+              <div className="portfolioBlock featured">
                 {portfolioDB.map(item=>{
                   return  <div
-                  class="portfolioBox"
+                  className="portfolioBox"
                  >
-                  <div class="portfolioImg">
+                  <div className="portfolioImg">
                     <img src={item.img} alt="" />
                   </div>
-                  <div class="portfolioText">
+                  <div className="portfolioText">
                     <h3>${item.title}</h3>
                     <h4>Technology</h4>
                     <ul>
@@ -460,24 +463,24 @@ function App() {
                       <li>${item.functions[1]}</li>
                       <li>${item.functions[2]}</li>
                     </ul>
-                    <div class="portfolioBtns">
+                    <div className="portfolioBtns">
                       <a
                         target="_blank"
                         href={item.link}
-                        ><button class="gotoSite">
+                        ><button className="gotoSite">
                           Go To Site
-                          <div class="toright">
-                            <i class="fas fa-arrow-right"></i>
+                          <div className="toright">
+                            <i className="fas fa-arrow-right"></i>
                           </div>
                         </button>
                       </a>
                       <a
                         target="_blank"
                         href={item.github}>
-                        <button class="gotoCode">
+                        <button className="gotoCode">
                           Go To Code
-                          <div class="toright">
-                            <i class="fas fa-arrow-right"></i>
+                          <div className="toright">
+                            <i className="fas fa-arrow-right"></i>
                           </div>
                         </button>
                       </a>
@@ -490,21 +493,21 @@ function App() {
           </div>
         </section>
 
-        <section id="about" class="about">
-          <div class="container">
-            <div class="sectionTitle">
+        <section id="about" className="about">
+          <div className="container">
+            <div className="sectionTitle">
               <h2>About Me</h2>
             </div>
-            <div class="aboutBlock">
+            <div className="aboutBlock">
               <div
-                class="aboutImg"
+                className="aboutImg"
                 data-aos="fade-left"
                 data-aos-duration="3000"
               >
                 <img src="/web-developer.png" alt="" />
               </div>
               <div
-                class="aboutText"
+                className="aboutText"
                 data-aos="fade-right"
                 data-aos-duration="3000"
               >
@@ -538,29 +541,29 @@ function App() {
                   nihil optio cum ut nulla amet, est iusto illum ipsam quaerat
                   officiis? Cumque, fugit sed.
                 </p>
-                <button class="downloadBtn">
-                  <i class="fas fa-download"></i> Download CV
+                <button className="downloadBtn">
+                  <i className="fas fa-download"></i> Download CV
                 </button>
               </div>
             </div>
           </div>
         </section>
 
-        <section class="contact">
-          <div class="container">
-            <div class="sectionTitle">
+        <section className="contact">
+          <div className="container">
+            <div className="sectionTitle">
               <h2>Contact me</h2>
-              <p class="contactInfo">
+              <p className="contactInfo">
                 Have a question or a project in mind? Let’s connect
               </p>
             </div>
             <form action="#">
-              <div class="col">
+              <div className="col">
                 <input type="text" placeholder="Name" />
                 <input type="number" placeholder="Phone Number" />
                 <input type="text" placeholder="Timeline" />
               </div>
-              <div class="col">
+              <div className="col">
                 <input type="text" placeholder="Email" />
                 <select name="select" id="select">
                   <option disabled selected>
@@ -576,7 +579,7 @@ function App() {
                   id="info"
                   placeholder="Project Details..."
                 ></textarea>
-                <button type="submit" class="sendBtn">
+                <button type="submit" className="sendBtn">
                   Send
                 </button>
               </div>
