@@ -4,7 +4,7 @@ function App() {
   const [portfolioDB, setPortfolioDB] = useState([
     {
       id: 1,
-      img: "/public/weather.jpg",
+      img: "/weather.jpg",
       type: "featured",
       title: "Weather Web Application",
       technology: "JavaScript",
@@ -14,7 +14,7 @@ function App() {
     },
     {
       id: 2,
-      img: "/public/ecommerse.jpg",
+      img: "/ecommerse.jpg",
       type: "featured",
       title: "eCommerse Multipage Market Site",
       technology: "JavaScript",
@@ -25,7 +25,7 @@ function App() {
     },
     {
       id: 3,
-      img: "/public/taqvim.jpg",
+      img: "/taqvim.jpg",
       type: "featured",
       title: "Taqvim Web Application",
       technology: "JavaScript",
@@ -35,7 +35,7 @@ function App() {
     },
     {
       id: 4,
-      img: "/public/contact.jpg",
+      img: "/contact.jpg",
       type: "featured",
       title: "Contact Web Application",
       technology: "JavaScript",
@@ -45,7 +45,7 @@ function App() {
     },
     {
       id: 5,
-      img: "/public/todolist.jpg",
+      img: "/todolist.jpg",
       type: "featured",
       title: "To Do List",
       technology: "JavaScript",
@@ -55,7 +55,7 @@ function App() {
     },
     {
       id: 6,
-      img: "/public/countries.jpg",
+      img: "/countries.jpg",
       type: "featured",
       title: "Countries Data",
       technology: "JavaScript",
@@ -70,7 +70,7 @@ function App() {
         <div class="mobileLinksBack">
           <div class="mobileLinks">
             <div class="mobileModalLogo">
-              <img src="/public/logo.png" alt="" />
+              <img src="/logo.png" alt="" />
             </div>
             <ul class="mobileLinksList">
               <li>
@@ -112,7 +112,7 @@ function App() {
               data-aos="fade-right"
               data-aos-duration="3000"
             >
-              <img src="/public/logo.png" alt="" />
+              <img src="/logo.png" alt="" />
             </a>
             <ul class="links" data-aos="fade-down" data-aos-duration="3000">
               <li>
@@ -201,7 +201,7 @@ function App() {
               </div>
               <div class="heroBtns" data-aos="fade-up" data-aos-duration="3000">
                 <button class="hireMeBtn">Hire Me</button>
-                <a href="/public/resume.txt" download="Resume">
+                <a href="/resume.txt" download="Resume">
                   <button class="download">
                     <i class="fas fa-download"></i> Download CV
                   </button>
@@ -227,7 +227,7 @@ function App() {
               </div>
             </div>
             <div class="heroImg" data-aos="fade-left" data-aos-duration="3000">
-              <img src="/public/logg.jpg" alt="" />
+              <img src="/logg.jpg" alt="" />
             </div>
           </div>
         </div>
@@ -252,7 +252,7 @@ function App() {
               >
                 <h2 class="skillHover">90% learned</h2>
                 <h2 class="skillName">HTML5</h2>
-                <img src="/public/html5.svg" alt="" />
+                <img src="/html5.svg" alt="" />
               </div>
               <div
                 class="skillBox"
@@ -261,7 +261,7 @@ function App() {
               >
                 <h2 class="skillHover">87% learned</h2>
                 <h2 class="skillName">CSS3</h2>
-                <img src="/public/css3.svg" alt="" />
+                <img src="/css3.svg" alt="" />
               </div>
               <div
                 class="skillBox"
@@ -270,7 +270,7 @@ function App() {
               >
                 <h2 class="skillHover">75% learned</h2>
                 <h2 class="skillName">SASS</h2>
-                <img src="/public/sass-original.svg" alt="" />
+                <img src="/sass-original.svg" alt="" />
               </div>
               <div
                 class="skillBox"
@@ -279,7 +279,7 @@ function App() {
               >
                 <h2 class="skillHover">68% learned</h2>
                 <h2 class="skillName">Bootstrap</h2>
-                <img src="/public/bootstrapwhite.svg" alt="" />
+                <img src="/bootstrapwhite.svg" alt="" />
               </div>
               <div
                 class="skillBox"
@@ -288,7 +288,7 @@ function App() {
               >
                 <h2 class="skillHover">72% learned</h2>
                 <h2 class="skillName">Tailwind</h2>
-                <img src="/public/tailwind-css.svg" alt="" />
+                <img src="/tailwind-css.svg" alt="" />
               </div>
               <div
                 class="skillBox"
@@ -297,7 +297,7 @@ function App() {
               >
                 <h2 class="skillHover">82% learned</h2>
                 <h2 class="skillName">JavaScript</h2>
-                <img src="/public/javascript-js.svg" alt="" />
+                <img src="/javascript-js.svg" alt="" />
               </div>
               <div
                 class="skillBox"
@@ -306,7 +306,7 @@ function App() {
               >
                 <h2 class="skillHover">15% learned</h2>
                 <h2 class="skillName">ReactJS</h2>
-                <img src="/public/file-type-reactjs.svg" alt="" />
+                <img src="/file-type-reactjs.svg" alt="" />
               </div>
             </div>
           </div>
@@ -329,7 +329,7 @@ function App() {
                 data-aos-duration="3000"
               >
                 <div class="boxImg">
-                  <img src="/public/globe.svg" alt="" />
+                  <img src="/globe.svg" alt="" />
                 </div>
                 <h2>Web Development</h2>
                 <ul>
@@ -357,7 +357,7 @@ function App() {
                 data-aos-duration="3000"
               >
                 <div class="boxImg">
-                  <img src="/public/uxui.svg" alt="" />
+                  <img src="/uxui.svg" alt="" />
                 </div>
                 <h2>Web Platforms</h2>
                 <ul>
@@ -387,7 +387,7 @@ function App() {
                 data-aos-duration="3000"
               >
                 <div class="boxImg">
-                  <img src="/public/spa.svg" alt="" />
+                  <img src="/spa.svg" alt="" />
                 </div>
                 <h2>Single Page Applications</h2>
                 <ul>
@@ -501,7 +501,7 @@ function App() {
                 data-aos="fade-left"
                 data-aos-duration="3000"
               >
-                <img src="/public/web-developer.png" alt="" />
+                <img src="/web-developer.png" alt="" />
               </div>
               <div
                 class="aboutText"
