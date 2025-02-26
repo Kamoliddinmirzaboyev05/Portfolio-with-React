@@ -1,0 +1,591 @@
+import React, { useState } from "react";
+import "./App.css";
+function App() {
+  const [portfolioDB, setPortfolioDB] = useState([
+    {
+      id: 1,
+      img: "/public/weather.jpg",
+      type: "featured",
+      title: "Weather Web Application",
+      technology: "JavaScript",
+      link: "https://weather-app-mkm.netlify.app/",
+      github: "https://github.com/Kamoliddinmirzaboyev05/Weather-App",
+      functions: ["Fetch API", "Search City", "Local Storage"],
+    },
+    {
+      id: 2,
+      img: "/public/ecommerse.jpg",
+      type: "featured",
+      title: "eCommerse Multipage Market Site",
+      technology: "JavaScript",
+      link: "https://ecommerse-mkm.netlify.app/",
+      github:
+        "https://github.com/Kamoliddinmirzaboyev05/eCommerse-Big-JS-Project",
+      functions: ["Fetch API", "Multi Page", "Local Storage"],
+    },
+    {
+      id: 3,
+      img: "/public/taqvim.jpg",
+      type: "featured",
+      title: "Taqvim Web Application",
+      technology: "JavaScript",
+      link: "https://taqvim-mkm.netlify.app/",
+      github: "https://github.com/Kamoliddinmirzaboyev05/Namoz-Vaqtlari-APP",
+      functions: ["Fetch API", "Daily Times", "Local Storage"],
+    },
+    {
+      id: 4,
+      img: "/public/contact.jpg",
+      type: "featured",
+      title: "Contact Web Application",
+      technology: "JavaScript",
+      link: "https://contacts-mkm.netlify.app/",
+      github: "https://github.com/Kamoliddinmirzaboyev05/Weather-App",
+      functions: ["Fetch API", "Search City", "Local Storage"],
+    },
+    {
+      id: 5,
+      img: "/public/todolist.jpg",
+      type: "featured",
+      title: "To Do List",
+      technology: "JavaScript",
+      link: "https://todolist-mkm.netlify.app/",
+      github: "https://github.com/Kamoliddinmirzaboyev05",
+      functions: ["Add new task", "Complate task", "Local Storage"],
+    },
+    {
+      id: 6,
+      img: "/public/countries.jpg",
+      type: "featured",
+      title: "Countries Data",
+      technology: "JavaScript",
+      link: "https://weather-app-mkm.netlify.app/",
+      github: "https://github.com/Kamoliddinmirzaboyev05/Weather-App",
+      functions: ["Fetch API", "Search City", "Local Storage"],
+    },
+  ]);
+  return (
+    <>
+      <header id="navbar">
+        <div class="mobileLinksBack">
+          <div class="mobileLinks">
+            <div class="mobileModalLogo">
+              <img src="/public/logo.png" alt="" />
+            </div>
+            <ul class="mobileLinksList">
+              <li>
+                <a class="active link" href="#navbar">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a class="link" href="#skills">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a class="link" href="#services">
+                  Services
+                </a>
+              </li>
+              <li>
+                <a class="link" href="#portfolio">
+                  Portfolio
+                </a>
+              </li>
+              <li>
+                <a class="link" href="#about">
+                  About
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav>
+          <div class="container">
+            <div class="bar">
+              <i class="fas fa-bars"></i>
+            </div>
+            <a
+              href="#navbar"
+              class="logo"
+              data-aos="fade-right"
+              data-aos-duration="3000"
+            >
+              <img src="/public/logo.png" alt="" />
+            </a>
+            <ul class="links" data-aos="fade-down" data-aos-duration="3000">
+              <li>
+                <a class="active" href="#navbar">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <a href="#services">Services</a>
+              </li>
+              <li>
+                <a href="#portfolio">Portfolio</a>
+              </li>
+              <li>
+                <a href="#about">About</a>
+              </li>
+            </ul>
+            <a
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              target="_blank"
+              href="https://t.me/Kamoliddin_Mirzaboyev"
+            >
+              <button class="contactBtn">Contact</button>
+            </a>
+          </div>
+          <a href="#navbar" class="up">
+            <i class="fa-solid fa-up-long"></i>
+          </a>
+        </nav>
+        <div class="hero">
+          <div class="container">
+            <div class="heroText">
+              <h2 data-aos="fade-right" data-aos-duration="3000">
+                Hi, I am <br />
+                <span class="name"> Kamoliddin Mirzaboyev </span> <br />
+                <span class="job">Frontend Developer</span>
+              </h2>
+              <div class="heroSocials">
+                <a
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  target="_blank"
+                  href="https://www.instagram.com/mirzaboyevk/"
+                  class="iconBox"
+                >
+                  <p class="socialName instagram">Instagram</p>
+
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  target="_blank"
+                  href="https://t.me/Kamoliddin_Mirzaboyev"
+                  class="iconBox"
+                >
+                  <p class="socialName telegram">Telegram</p>
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  target="_blank"
+                  href="https://github.com/Kamoliddinmirzaboyev05"
+                  class="iconBox"
+                >
+                  <p class="socialName github">GitHub</p>
+
+                  <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                  data-aos="fade-right"
+                  data-aos-duration="3000"
+                  target="_blank"
+                  href="https://t.me/MKPortfolio_Codial"
+                  class="iconBox"
+                >
+                  <p class="socialName linkedin">Portfolio</p>
+
+                  <i class="fa-solid fa-briefcase"></i>
+                </a>
+              </div>
+              <div class="heroBtns" data-aos="fade-up" data-aos-duration="3000">
+                <button class="hireMeBtn">Hire Me</button>
+                <a href="/public/resume.txt" download="Resume">
+                  <button class="download">
+                    <i class="fas fa-download"></i> Download CV
+                  </button>
+                </a>
+              </div>
+              <div
+                class="experienceBoxes"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              >
+                <div class="experience">
+                  <h2>1+</h2>
+                  <p>Experience</p>
+                </div>
+                <div class="experience">
+                  <h2>1+</h2>
+                  <p>Real Projects</p>
+                </div>
+                <div class="experience">
+                  <h2>50+</h2>
+                  <p>Projects</p>
+                </div>
+              </div>
+            </div>
+            <div class="heroImg" data-aos="fade-left" data-aos-duration="3000">
+              <img src="/public/logg.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section
+          id="skills"
+          class="skills"
+          data-aos="fade-top"
+          data-aos-duration="3000"
+        >
+          <div class="container">
+            <div class="sectionTitle">
+              <h2>My Skills</h2>
+            </div>
+            <div class="skillsBlock">
+              <div
+                class="skillBox"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              >
+                <h2 class="skillHover">90% learned</h2>
+                <h2 class="skillName">HTML5</h2>
+                <img src="/public/html5.svg" alt="" />
+              </div>
+              <div
+                class="skillBox"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              >
+                <h2 class="skillHover">87% learned</h2>
+                <h2 class="skillName">CSS3</h2>
+                <img src="/public/css3.svg" alt="" />
+              </div>
+              <div
+                class="skillBox"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              >
+                <h2 class="skillHover">75% learned</h2>
+                <h2 class="skillName">SASS</h2>
+                <img src="/public/sass-original.svg" alt="" />
+              </div>
+              <div
+                class="skillBox"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              >
+                <h2 class="skillHover">68% learned</h2>
+                <h2 class="skillName">Bootstrap</h2>
+                <img src="/public/bootstrapwhite.svg" alt="" />
+              </div>
+              <div
+                class="skillBox"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              >
+                <h2 class="skillHover">72% learned</h2>
+                <h2 class="skillName">Tailwind</h2>
+                <img src="/public/tailwind-css.svg" alt="" />
+              </div>
+              <div
+                class="skillBox"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              >
+                <h2 class="skillHover">82% learned</h2>
+                <h2 class="skillName">JavaScript</h2>
+                <img src="/public/javascript-js.svg" alt="" />
+              </div>
+              <div
+                class="skillBox"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              >
+                <h2 class="skillHover">15% learned</h2>
+                <h2 class="skillName">ReactJS</h2>
+                <img src="/public/file-type-reactjs.svg" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="services"
+          class="services"
+          data-aos="fade-top"
+          data-aos-duration="3000"
+        >
+          <div class="container">
+            <div class="sectionTitle">
+              <h2>Services</h2>
+            </div>
+            <div class="servicesBlock">
+              <div
+                class="serviceBox"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              >
+                <div class="boxImg">
+                  <img src="/public/globe.svg" alt="" />
+                </div>
+                <h2>Web Development</h2>
+                <ul>
+                  <li>
+                    <p>Static and dynamic website development.</p>
+                  </li>
+                  <li>
+                    <p>
+                      Responsive (mobile, tablet and desktop) design Building
+                      websites.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Landing page and multipage websites with HTML, CSS and
+                      JavaScript.
+                    </p>
+                  </li>
+                </ul>
+                <p></p>
+              </div>
+              <div
+                class="serviceBox"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <div class="boxImg">
+                  <img src="/public/uxui.svg" alt="" />
+                </div>
+                <h2>Web Platforms</h2>
+                <ul>
+                  <li>
+                    <p>
+                      Custom Web Platforms – Business-specific, scalable, and
+                      secure web solutions.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      E-commerce & Marketplaces – Online stores and job
+                      platforms with smooth transactions.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Admin Dashboards – Intuitive panels for data management
+                      and analytics.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="serviceBox"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              >
+                <div class="boxImg">
+                  <img src="/public/spa.svg" alt="" />
+                </div>
+                <h2>Single Page Applications</h2>
+                <ul>
+                  <li>
+                    <p>
+                      Fast & Interactive – Seamless, dynamic user experience
+                      without page reloads.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      API-Powered – Fetch and display real-time data using REST
+                      APIs.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Optimized Performance – Smooth, efficient, and
+                      mobile-friendly web apps.
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section
+          id="portfolio"
+          class="projects"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
+          <div class="container">
+            <div class="sectionTitle">
+              <h2>Portfolio</h2>
+            </div>
+            <div class="sectionTitle">
+              <div class="portfolioFilter">
+                <button class="featuredBtn activeBtn">Featured</button>
+                <button class="staticBtn">Static</button>
+                <button class="interactiveBtn">Interactive</button>
+                <button class="apiBtn">API Integrated</button>
+                <button class="reactBtn">React-Based</button>
+                <a target="_blank" href="https://t.me/MKPortfolio_Codial">
+                  <button class="all">All</button>
+                </a>
+              </div>
+              <h4 class="portfolioInfo">
+                HTML, CSS, SASS, Bootstrap, Tailwind-CSS, JavaScript and ReactJS
+                Projects
+              </h4>
+              <div class="portfolioBlock featured">
+                {portfolioDB.map(item=>{
+                  return  <div
+                  class="portfolioBox"
+                 >
+                  <div class="portfolioImg">
+                    <img src={item.img} alt="" />
+                  </div>
+                  <div class="portfolioText">
+                    <h3>${item.title}</h3>
+                    <h4>Technology</h4>
+                    <ul>
+                      <li>${item.technology}</li>
+                    </ul>
+                    <h4>Functions</h4>
+                    <ul>
+                      <li>${item.functions[0]}</li>
+                      <li>${item.functions[1]}</li>
+                      <li>${item.functions[2]}</li>
+                    </ul>
+                    <div class="portfolioBtns">
+                      <a
+                        target="_blank"
+                        href={item.link}
+                        ><button class="gotoSite">
+                          Go To Site
+                          <div class="toright">
+                            <i class="fas fa-arrow-right"></i>
+                          </div>
+                        </button>
+                      </a>
+                      <a
+                        target="_blank"
+                        href={item.github}>
+                        <button class="gotoCode">
+                          Go To Code
+                          <div class="toright">
+                            <i class="fas fa-arrow-right"></i>
+                          </div>
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                })}
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="about" class="about">
+          <div class="container">
+            <div class="sectionTitle">
+              <h2>About Me</h2>
+            </div>
+            <div class="aboutBlock">
+              <div
+                class="aboutImg"
+                data-aos="fade-left"
+                data-aos-duration="3000"
+              >
+                <img src="/public/web-developer.png" alt="" />
+              </div>
+              <div
+                class="aboutText"
+                data-aos="fade-right"
+                data-aos-duration="3000"
+              >
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+                  eveniet quod vel facere nemo natus culpa sequi neque? Alias
+                  tempora hic ex repudiandae? Sequi possimus, nesciunt animi
+                  ducimus vero eius libero doloribus architecto fugit dicta
+                  eveniet earum quibusdam! Necessitatibus minima illo sequi
+                  nesciunt ipsam mollitia illum, cum natus? Illo, minima
+                  voluptates! Ullam dolores non adipisci voluptatum praesentium,
+                  esse ipsa. Fuga assumenda, voluptates ipsam laboriosam ex
+                  obcaecati culpa nobis?
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae modi est itaque corporis minus suscipit eveniet,
+                  corrupti sapiente possimus, deserunt velit non veritatis? Ipsa
+                  iure deleniti vitae et laborum optio nesciunt quisquam
+                  officiis mollitia ipsum placeat laudantium eius porro error
+                  quod, quo sapiente sint libero reprehenderit molestiae odio
+                  vel asperiores!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis, quidem. Saepe aliquid dolorem, tempore velit iste
+                  reprehenderit incidunt iure esse aliquam, excepturi
+                  consectetur ex corrupti. Repellat numquam accusamus animi
+                  nulla maiores. Nihil dicta magnam exercitationem! Ad sunt
+                  sequi ex earum provident fugiat accusamus exercitationem ipsa
+                  nihil optio cum ut nulla amet, est iusto illum ipsam quaerat
+                  officiis? Cumque, fugit sed.
+                </p>
+                <button class="downloadBtn">
+                  <i class="fas fa-download"></i> Download CV
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="contact">
+          <div class="container">
+            <div class="sectionTitle">
+              <h2>Contact me</h2>
+              <p class="contactInfo">
+                Have a question or a project in mind? Let’s connect
+              </p>
+            </div>
+            <form action="#">
+              <div class="col">
+                <input type="text" placeholder="Name" />
+                <input type="number" placeholder="Phone Number" />
+                <input type="text" placeholder="Timeline" />
+              </div>
+              <div class="col">
+                <input type="text" placeholder="Email" />
+                <select name="select" id="select">
+                  <option disabled selected>
+                    Service of Interest
+                  </option>
+                  <option value="development">Web Development</option>
+                  <option value="platforms">Web Platform</option>
+                  <option value="spa">Single Page Application</option>
+                  <option value="teaching">Teaching</option>
+                </select>
+                <textarea
+                  name="info"
+                  id="info"
+                  placeholder="Project Details..."
+                ></textarea>
+                <button type="submit" class="sendBtn">
+                  Send
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+    </>
+  );
+}
+
+export default App;
