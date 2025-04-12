@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import AOS from "aos";
 AOS.init();
 function App() {
+  
   const [portfolioDB, setPortfolioDB] = useState([
     {
       id: 1,
@@ -67,10 +68,13 @@ function App() {
       functions: ["Fetch API", "Search City", "Local Storage"],
     },
   ]);
+
+  const [openModal, setOpenModal] = useState(false)
   return (
     <>
       <header id="navbar">
-        <div className="mobileLinksBack">
+        {/* <div className="mobileLinksBack">
+          
           <div className="mobileLinks">
             <div className="mobileModalLogo">
               <img src="/logo.png" alt="" />
@@ -103,10 +107,12 @@ function App() {
               </li>
             </ul>
           </div>
-        </div>
+        </div> */}
         <nav>
           <div className="container">
-            <div className="bar">
+            <div onClick={()=>{
+              setOpenModal(true)
+            }} className="bar">
               <i className="fas fa-bars"></i>
             </div>
             <a
